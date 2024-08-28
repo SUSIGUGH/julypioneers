@@ -1,2 +1,2 @@
 FROM bitnami/postgresql
-MAINTANER susigugh@gmail.com
+MAINTAINER susigugh@gmail.com
