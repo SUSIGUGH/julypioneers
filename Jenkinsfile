@@ -4,12 +4,10 @@ pipeline{
     stages{
         
         // Connect to GitHub
-        stage('Connect to Github create image'){
+        stage('Create postgresql image'){
             steps{
-               sh 'rm -Rf 730am'
-               sh 'git clone https://github.com/SUSIGUGH/730am.git'
-               sh 'cd 730am/docker && sudo docker build -t httpdimg . '
-               sh 'sudo docker run -dit --name=httpd01 httpdimg'
+               sh 'cd apache/postgresql && sudo docker build -t custpostgredql . '
+               sh 'sudo docker images'
             }
         }
         
