@@ -11,7 +11,7 @@ pipeline{
             }
         }
 
-        stage('Run Docker postgresql Container from image'){
+        stage('Run Docker postgresql Container   from image'){
             steps{
                sh 'sudo docker run -dit --name=postgresql01 custpostgresql'
                sh 'sudo docker ps'
